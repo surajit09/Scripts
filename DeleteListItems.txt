@@ -1,0 +1,14 @@
+$SITEURL = "https://thethread.carpetright.co.uk/buying/"
+
+$site = new-object Microsoft.SharePoint.SPSite ( $SITEURL )
+$web = $site.OpenWeb()
+
+$oList = $web.Lists["Workflow Tasks"]
+
+$collListItems = $oList.Items
+$count = $collListItems.Count - 1
+
+for($intIndex = $count; $intIndex -gt -1; $intIndex--)
+{
+        $collListItems[$intIndex].Delete()
+} 

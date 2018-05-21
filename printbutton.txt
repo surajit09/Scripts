@@ -1,0 +1,27 @@
+<script>
+
+$(document).ready(function() { 
+
+  $('.printMe').click(function() { 
+  window.print(); 
+  return false; 
+  }); 
+
+});</script>
+
+<style> 
+.printMe{ 
+    color:#666666; 
+    font-weight:bold; 
+    cursor:pointer; 
+}
+
+.printMe:hover{ 
+color:#333333; 
+font-weight:bold; 
+cursor:pointer; 
+} 
+
+</style>
+
+<button class="printMe">Print</button>

@@ -1,0 +1,8 @@
+Ab3rd@@nAngu5
+
+sp_prdinstall
+
+
+PowerShell.exe
+
+-File "D:\Scripts\Announcementsv2.ps1"
